@@ -1,0 +1,738 @@
+from discord.ext import commands
+import PIL
+from PIL import Image
+import os
+from pathlib import Path
+import discord
+
+bot = commands.Bot(command_prefix="=")
+client = discord.Client()
+im = Image.open
+
+
+@bot.command()
+async def Maya():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Maya.jpg')
+    return await bot.say("Maya Muerta the Watcher "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 30.0 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Crit Damage "
+                         "\nLvl 40 - Crit Chance "
+                         "\nLvl 60 - Chesterson Amount "
+                         "\nLvl 100 - Chesterson Chance "
+                         "\nLvl 200 - Mana Pool Cap "
+                         "\nLvl 500 - Tap Damage "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - Boss Gold "
+                         "\nLvl 3000 - All Hero Damage "
+                         "\nLvl 4000 - All Gold")
+
+@bot.command()
+async def Zato():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Zato.jpg')
+    return await bot.say("Zato the Blind Staff Master "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 180.0 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Chesterson Amount "
+                         "\nLvl 40 - Chesterson Chance "
+                         "\nLvl 60 - Crit Damage "
+                         "\nLvl 100 - Crit Chance "
+                         "\nLvl 200 - Titan Gold "
+                         "\nLvl 500 - Mana Pool Cap "
+                         "\nLvl 1000 - All Gold "
+                         "\nLvl 2000 - All Damage "
+                         "\nLvl 3000 - All Hero Damage "
+                         "\nLvl 4000 - All Gold")
+
+@bot.command()
+async def Sophia():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Sophia.jpg')
+    return await bot.say("Sohpia, Champion of Swords "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 800.0 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Tap Damage "
+                         "\nLvl 40 - Tap Damage "
+                         "\nLvl 60 - Tap Damage "
+                         "\nLvl 100 - Tap Damage "
+                         "\nLvl 200 - Tap Damage "
+                         "\nLvl 500 - Tap Damage "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - All Hero Damage "
+                         "\nLvl 3000 - All Gold "
+                         "\nLvl 4000 - Boss Gold")
+
+@bot.command()
+async def Lance():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Lance.jpg')
+    return await bot.say("Lance, Knight of Cobalt Steel "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 4.0000E+03 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Boss Gold "
+                         "\nLvl 40 - Boss Gold "
+                         "\nLvl 60 - Boss Gold "
+                         "\nLvl 100 - Boss Gold "
+                         "\nLvl 200 - Boss Gold "
+                         "\nLvl 500 - Boss Gold  "
+                         "\nLvl 1000 - All Hero Damage "
+                         "\nLvl 2000 - Chesterson Amount "
+                         "\nLvl 3000 - Melee Hero Damage "
+                         "\nLvl 4000 - Boss Gold")
+
+@bot.command()
+async def Pingo():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Pingo.jpg')
+    return await bot.say ("Pingo of the Tori "
+                          "\nDamage Type: Ranged "
+                          "\nInitial Cost: 2.80000E+04 "
+                          "\n~ Hero Skills ~ "
+                          "\nLvl 20 - Mana Pool Cap "
+                          "\nLvl 40 - Mana Pool Cap "
+                          "\nLvl 60 - Mana Pool Cap "
+                          "\nLvl 100 - Mana Pool Cap "
+                          "\nLvl 200 - Mana Pool Cap "
+                          "\nLvl 500 - Mana Pool Cap "
+                          "\nLvl 1000 - All Hero Damage "
+                          "\nLvl 2000 - Mana Pool Cap "
+                          "\nLvl 3000 - Mana Pool Cap "
+                          "\nLvl 4000 - Mana Pool Cap")
+
+@bot.command()
+async def Rosabella():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Rosabella.jpg')
+    return await bot.say("Rosabella Bonnie Archer "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 2.2400E+05 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Titan Gold "
+                         "\nLvl 40 - Titan Gold "
+                         "\nLvl 60 - Titan Gold "
+                         "\nLvl 100 - Titan Gold "
+                         "\nLvl 200 - Titan Gold "
+                         "\nLvl 500 - Titan Gold "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - Spell Hero Damage "
+                         "\nLvl 3000 - All Hero Damage "
+                         "\nLvl 4000 - Titan Gold")
+
+@bot.command()
+async def Gulbrand():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Gulbrand.jpg')
+    return await bot.say("Gulbrand the Destroyer "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 2.6880E+06 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Chesterson Amount "
+                         "\nLvl 40 - Chesterson Amount "
+                         "\nLvl 60 - Chesterson Amount "
+                         "\nLvl 100 - Chesterson Amount "
+                         "\nLvl 200 - Chesterson Amount "
+                         "\nLvl 500 - Chesterson Amount "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - Chesterson Amount "
+                         "\nLvl 3000 - All Damage "
+                         "\nLvl 4000 - Chesterson Amount")
+
+@bot.command()
+async def Davey():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Davey.jpg')
+    return await bot.say("Captain Davey Cannon "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 2.1504E+07 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Ranged Hero Damage "
+                         "\nLvl 40 - Ranged Hero Damage "
+                         "\nLvl 60 - Ranged Hero Damage "
+                         "\nLvl 100 - Ranged Hero Damage "
+                         "\nLvl 200 - Ranged Hero Damage "
+                         "\nLvl 500 - Ranged Hero Damage "
+                         "\nLvl 1000 - Mana Pool Cap "
+                         "\nLvl 2000 - All Hero Damage "
+                         "\nLvl 3000 - All Damage "
+                         "\nLvl 4000 - Ranged Hero Damage")
+
+@bot.command()
+async def Rhys():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Rhys.jpg')
+    return await bot.say("Rhys Mage of Order Evetga "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 2.3654E+08 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Melee Hero Damage "
+                         "\nLvl 40 - Melee Hero Damage "
+                         "\nLvl 60 - Melee Hero Damage "
+                         "\nLvl 100 - Melee Hero Damage "
+                         "\nLvl 200 - Melee Hero Damage "
+                         "\nLvl 500 - Melee Hero Damage "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - All Hero Damage "
+                         "\nLvl 3000 - Mana Pool Cap "
+                         "\nLvl 4000 - All Gold")
+
+@bot.command()
+async def Kronus():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Kronus.jpg')
+    return await bot.say("Kronus, Bringer of Judgement "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 1.8924E+09 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - % Hero Tap Damage "
+                         "\nLvl 40 - Spell Hero Damage "
+                         "\nLvl 60 - Spell Hero Damage "
+                         "\nLvl 100 - Spell Hero Damage "
+                         "\nLvl 200 - Spell Hero Damage "
+                         "\nLvl 500 - Spell Hero Damage "
+                         "\nLvl 1000 - All Gold "
+                         "\nLvl 2000 - All Hero Damage "
+                         "\nLvl 3000 - Crit Damage "
+                         "\nLvl 4000 - Mana Pool Cap")
+
+@bot.command()
+async def Cosette():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Cosette.jpg')
+    return await bot.say("Cosette, Jewel of House Sabre "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 9.4618E+09 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Melee Hero Damage "
+                         "\nLvl 40 - Melee Hero Damage "
+                         "\nLvl 60 - Melee Hero Damage "
+                         "\nLvl 100 - Melee Hero Damage "
+                         "\nLvl 200 - Melee Hero Damage "
+                         "\nLvl 500 - Melee Hero Damage "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - Melee Hero Damage "
+                         "\nLvl 3000 - Mana Pool Cap "
+                         "\nLvl 4000 - All Damage")
+
+@bot.command()
+async def Kiki():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Kiki.jpg')
+    return await bot.say("Kiki the Dragon Rider "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 8.5156E+10 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Spell Hero Damage "
+                         "\nLvl 40 - Spell Hero Damage "
+                         "\nLvl 60 - Spell Hero Damage "
+                         "\nLvl 100 - Spell Hero Damage "
+                         "\nLvl 200 - Spell Hero Damage "
+                         "\nLvl 500 - Spell Hero Damage "
+                         "\nLvl 1000 - All Damage "
+                         "\nLvl 2000 - All Hero Damage "
+                         "\nLvl 3000 - Melee Hero Damage "
+                         "\nLvl 4000 - Mana Pool Cap")
+
+@bot.command()
+async def Maddie():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Maddie.jpg')
+    return await bot.say("Maddie, Shadow Thief "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 8.5156E+11 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Ranged Hero Damage "
+                         "\nLvl 40 - Ranged Hero Damage "
+                         "\nLvl 60 - Ranged Hero Damage "
+                         "\nLvl 100 - Ranged Hero Damage "
+                         "\nLvl 200 - Ranged Hero Damage "
+                         "\nLvl 500 - Ranged Hero Damage "
+                         "\nLvl 1000 - All Hero Damage "
+                         "\nLvl 2000 - Melee Hero Damage "
+                         "\nLvl 3000 - Mana Pool Cap "
+                         "\nLvl 4000 - All Gold")
+
+@bot.command()
+async def Beany():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Beany.jpg')
+    return await bot.say("Beany Sprout the 1st "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 1.5328E+13 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - All Hero Damage "
+                         "\nLvl 40 - All Hero Damage "
+                         "\nLvl 60 - All Hero Damage "
+                         "\nLvl 100 - All Hero Damage "
+                         "\nLvl 200 - All Hero Damage "
+                         "\nLvl 500 - All Hero Damage "
+                         "\nLvl 1000 - All Damage "
+                         "\nLvl 2000 - % Hero Tap Damage "
+                         "\nLvl 3000 - Spell Hero Damage "
+                         "\nLvl 4000 - All Hero Damage")
+
+@bot.command()
+async def Sawyer():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Sawyer.jpg')
+    return await bot.say("Sawyer the Wild Gunslinger "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 1.8394E+14 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Tap Damage "
+                         "\nLvl 40 - Tap Damage "
+                         "\nLvl 60 - Tap Damage "
+                         "\nLvl 100 - Tap Damage "
+                         "\nLvl 200 - Tap Damage "
+                         "\nLvl 500 - Tap Damage "
+                         "\nLvl 1000 - All Damage "
+                         "\nLvl 2000 - All Gold "
+                         "\nLvl 3000 - All Hero Damage "
+                         "\nLvl 4000 - Tap Damage")
+
+@bot.command()
+async def Ursa():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Ursa.jpg')
+    return await bot.say("Lil' Ursa "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 1.6787E+15 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Crit Damage "
+                         "\nLvl 40 - Mana Regen "
+                         "\nLvl 60 - Mana Regen "
+                         "\nLvl 100 - Mana Regen "
+                         "\nLvl 200 - Mana Regen "
+                         "\nLvl 500 - Mana Regen "
+                         "\nLvl 1000 - Spell Hero Damage "
+                         "\nLvl 2000 - Chesterson Amount "
+                         "\nLvl 3000 - Mana Regen "
+                         "\nLvl 4000 - Titan Gold")
+
+@bot.command()
+async def Saje():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Saje.jpg')
+    return await bot.say("Saje the Garden Keeper "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 2.3109E+16 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Tap Damage "
+                         "\nLvl 40 - Ranged Hero Damage "
+                         "\nLvl 60 - Ranged Hero Damage "
+                         "\nLvl 100 - Ranged Hero Damage "
+                         "\nLvl 200 - Ranged Hero Damage "
+                         "\nLvl 500 - Ranged Hero Damage "
+                         "\nLvl 1000 - x10 Gold Chance "
+                         "\nLvl 2000 - All Damage "
+                         "\nLvl 3000 - % Hero Tap Damage "
+                         "\nLvl 4000 - x10 Gold Chance")
+
+@bot.command()
+async def Wally():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Wally.jpg')
+    return await bot.say("Wally Wat the Magician "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 7.9191E+17 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Tap Damage "
+                         "\nLvl 40 - Spell Hero Damage "
+                         "\nLvl 60 - Spell Hero Damage "
+                         "\nLvl 100 - Spell Hero Damage "
+                         "\nLvl 200 - Spell Hero Damage "
+                         "\nLvl 500 - Spell Hero Damage "
+                         "\nLvl 1000 - All Gold "
+                         "\nLvl 2000 - Melee Hero Damage "
+                         "\nLvl 3000 - Crit Chance "
+                         "\nLvl 4000 - % Hero Tap Damage")
+
+@bot.command()
+async def Jayce():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Jayce.jpg')
+    return await bot.say("Jayce the Ruthless Cutter "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 2.5555E+19 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Tap Damage "
+                         "\nLvl 40 - Spell Hero Damage "
+                         "\nLvl 60 - Spell Hero Damage "
+                         "\nLvl 100 - Spell Hero Damage "
+                         "\nLvl 200 - Spell Hero Damage "
+                         "\nLvl 500 - Spell Hero Damage "
+                         "\nLvl 1000 - All Gold "
+                         "\nLvl 2000 - Melee Hero Damage "
+                         "\nLvl 3000 - Crit Chance "
+                         "\nLvl 4000 - % Hero Tap Damage")
+
+@bot.command()
+async def Pharaoh():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Pharaoh.jpg')
+    return await bot.say("The Great Pharaoh "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 1.3111E+21 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Titan Gold "
+                         "\nLvl 40 - Titan Gold "
+                         "\nLvl 60 - Titan Gold "
+                         "\nLvl 100 - Titan Gold "
+                         "\nLvl 200 - Titan Gold "
+                         "\nLvl 500 - Titan Gold "
+                         "\nLvl 1000 - Ranged Hero Damage "
+                         "\nLvl 2000 - Titan Gold "
+                         "\nLvl 3000 - Ranged Hero Damage "
+                         "\nLvl 4000 - Spell Hero Damage")
+
+@bot.command()
+async def Boomoh():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Boomoh.jpg')
+    return await bot.say("Boomoh Doctor "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 1.9667E+22 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - x10 Gold Chance "
+                         "\nLvl 40 - x10 Gold Chance "
+                         "\nLvl 60 - x10 Gold Chance "
+                         "\nLvl 100 - x10 Gold Chance "
+                         "\nLvl 200 - x10 Gold Chance "
+                         "\nLvl 500 - x10 Gold Chance "
+                         "\nLvl 1000 - x10 Gold Chance "
+                         "\nLvl 2000 - Spell Hero Damage "
+                         "\nLvl 3000 - Tap Damage "
+                         "\nLvl 4000 - x10 Gold Chance")
+
+@bot.command()
+async def Dex():
+    await bot.uload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Dex.jpg')
+    return await bot.say("Dex-1000 "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 1.7700E+24 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Crit Chance "
+                         "\nLvl 40 - Crit Chance "
+                         "\nLvl 60 - Crit Chance "
+                         "\nLvl 100 - Crit Chance "
+                         "\nLvl 200 - Crit Chance "
+                         "\nLvl 500 - Crit Chance "
+                         "\nLvl 1000 - Spell Hero Damage "
+                         "\nLvl 2000 - % Hero Tap Damage "
+                         "\nLvl 3000 - Crit Damage "
+                         "\nLvl 4000 - All Damage")
+
+@bot.command()
+async def Cass():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Cass.jpg')
+    return await bot.say("The Great Madame Cass "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 3.5400E+26 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Chesterson Chance "
+                         "\nLvl 40 - Chesterson Chance "
+                         "\nLvl 60 - Chesterson Chance "
+                         "\nLvl 100 - Chesterson Chance "
+                         "\nLvl 200 - Chesterson Chance "
+                         "\nLvl 500 - Chesterson Chance "
+                         "\nLvl 1000 - All Gold "
+                         "\nLvl 2000 - All Damage "
+                         "\nLvl 3000 - Boss Gold "
+                         "\nLvl 4000 - Chesterson Chance")
+
+@bot.command()
+async def Lala():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Lala.jpg')
+    return await bot.say("Lala Quickshot "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 1.4160E+29 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Boss Gold "
+                         "\nLvl 40 - % Hero Tap Damage "
+                         "\nLvl 60 - Boss Gold "
+                         "\nLvl 100 - Boss Gold "
+                         "\nLvl 200 - Boss Gold "
+                         "\nLvl 500 - Boss Gold "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - All Gold "
+                         "\nLvl 3000 - All Damage "
+                         "\nLvl 4000 - Boss Gold")
+
+@bot.command()
+async def Aya():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Aya.jpg')
+    return await bot.say("Aya the Lightning Violet "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 1.5576E+32 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - All Gold "
+                         "\nLvl 40 - All Gold "
+                         "\nLvl 60 - All Gold "
+                         "\nLvl 100 - All Gold "
+                         "\nLvl 200 - All Gold "
+                         "\nLvl 500 - All Gold "
+                         "\nLvl 1000 - Ranged Hero Damage "
+                         "\nLvl 2000 - Melee Hero Damage "
+                         "\nLvl 3000 - Spell Hero Damage "
+                         "\nLvl 4000 - All Gold")
+
+@bot.command()
+async def Lucy():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Lucy.jpg')
+    return await bot.say("Lady Lucy the Night Caster "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 6.8534E+36 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Crit Damage "
+                         "\nLvl 40 - Crit Damage "
+                         "\nLvl 60 - Crit Damage "
+                         "\nLvl 100 - Crit Damage "
+                         "\nLvl 200 - Crit Damage "
+                         "\nLvl 500 - Crit Damage "
+                         "\nLvl 1000 - All Damage "
+                         "\nLvl 2000 - All Gold "
+                         "\nLvl 3000 - All Damage "
+                         "\nLvl 4000 - Crit Damage")
+
+@bot.command()
+async def Jazz():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Jazz.jpg')
+    return await bot.say("Jazz Rockerfellow "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 2.4124E+43 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - All Damage "
+                         "\nLvl 40 - All Damage "
+                         "\nLvl 60 - All Damage "
+                         "\nLvl 100 - All Damage "
+                         "\nLvl 200 - All Damage "
+                         "\nLvl 500 - All Damage "
+                         "\nLvl 1000 - x10 Gold Chance "
+                         "\nLvl 2000 - All Gold "
+                         "\nLvl 3000 - Ranged Hero Damage "
+                         "\nLvl 4000 - All Damage")
+
+@bot.command()
+async def Maple():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Maple.jpg')
+    return await bot.say("Maple the Autumn Guardian "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 6.7933E+51 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Boss Gold "
+                         "\nLvl 40 - Titan Gold "
+                         "\nLvl 60 - x10 Gold Chance "
+                         "\nLvl 100 - All Gold "
+                         "\nLvl 200 - Boss Gold "
+                         "\nLvl 500 - Titan Gold "
+                         "\nLvl 1000 - x10 Gold Chance "
+                         "\nLvl 2000 - All Gold "
+                         "\nLvl 3000 - Titan Gold "
+                         "\nLvl 4000 - Boss Gold")
+
+@bot.command()
+async def Kin():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Kin.jpg')
+    return await bot.say("Kin the Puffy Beast "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 1.5304E+61 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Chesterson Amount "
+                         "\nLvl 40 - Chesterson Chance "
+                         "\nLvl 60 - Chesterson Amount "
+                         "\nLvl 100 - Chesterson Chance "
+                         "\nLvl 200 - Chesterson Amount "
+                         "\nLvl 500 - Chesterson Chance "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - Chesterson Chance "
+                         "\nLvl 3000 - Chesterson Amount "
+                         "\nLvl 4000 - Tap Damage")
+
+@bot.command()
+async def Titania():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Titania.jpg')
+    return await bot.say("Princess Titania of Fay "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 2.7581E+72 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Mana Pool Cap "
+                         "\nLvl 40 - Mana Regen "
+                         "\nLvl 60 - Mana Pool Cap "
+                         "\nLvl 100 - Mana Regen "
+                         "\nLvl 200 - Mana Pool Cap "
+                         "\nLvl 500 - Mana Regen "
+                         "\nLvl 1000 - All Damage "
+                         "\nLvl 2000 - Ranged Hero Damage "
+                         "\nLvl 3000 - Mana Pool Cap "
+                         "\nLvl 4000 - Mana Regen")
+
+@bot.command()
+async def Miki():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Miki.jpg')
+    return await bot.say("Miki the Graceful Dancer "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 3.9767E+84 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Crit Damage "
+                         "\nLvl 40 - Crit Chance "
+                         "\nLvl 60 - Crit Damage "
+                         "\nLvl 100 - Crit Chance "
+                         "\nLvl 200 - Crit Damage "
+                         "\nLvl 500 - Crit Chance "
+                         "\nLvl 1000 - % Hero Tap Damage "
+                         "\nLvl 2000 - x10 Gold Chance "
+                         "\nLvl 3000 - Tap Damage "
+                         "\nLvl 4000 - Crit Damage")
+
+@bot.command()
+async def Mina():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Mina.jpg')
+    return await bot.say("Mina the Priestess of Light "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 4.5868E+96 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Crit Damage "
+                         "\nLvl 40 - Crit Damage "
+                         "\nLvl 60 - Crit Damage "
+                         "\nLvl 100 - Crit Damage "
+                         "\nLvl 200 - Crit Damage "
+                         "\nLvl 500 - Crit Damage "
+                         "\nLvl 1000 - Mana Regen "
+                         "\nLvl 2000 - Tap Damage "
+                         "\nLvl 3000 - Mana Pool Cap "
+                         "\nLvl 4000 - Chesterson Amount")
+
+@bot.command()
+async def Yzafa():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Yzafa.jpg')
+    return await bot.say("Yzafa the Fearsome Bandit "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 2.6453E+108 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Chesterson Amount "
+                         "\nLvl 40 - Chesterson Amount "
+                         "\nLvl 60 - Chesterson Amount "
+                         "\nLvl 100 - Chesterson Amount "
+                         "\nLvl 200 - Chesterson Amount "
+                         "\nLvl 500 - Chesterson Amount "
+                         "\nLvl 1000 - Mana Regen "
+                         "\nLvl 2000 - Tap Damage "
+                         "\nLvl 3000 - Crit Damage "
+                         "\nLvl 4000 - Mana Pool Cap")
+
+@bot.command()
+async def Zolom():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Zolom.jpg')
+    return await bot.say("Zolom Blaster, Space Hunter "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 7.6279E+122 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Crit Chance "
+                         "\nLvl 40 - Crit Chance "
+                         "\nLvl 60 - Crit Chance "
+                         "\nLvl 100 - Crit Chance "
+                         "\nLvl 200 - Crit Chance "
+                         "\nLvl 500 - Crit Chance "
+                         "\nLvl 1000 - Mana Regen "
+                         "\nLvl 2000 - Tap Damage "
+                         "\nLvl 3000 - Crit Damage "
+                         "\nLvl 4000 - Chesterson Amount")
+
+@bot.command()
+async def Finn():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Finn.jpg')
+    return await bot.say("Finn the Funny Hunter "
+                         "\nDamage Type: Ranged "
+                         "\nInitial Cost: 1.0000E+140"
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Spell Hero Damage "
+                         "\nLvl 40 - Spell Hero Damage "
+                         "\nLvl 60 - Spell Hero Damage "
+                         "\nLvl 100 - Spell Hero Damage "
+                         "\nLvl 200 - Spell Hero Damage "
+                         "\nLvl 500 - Titan Gold "
+                         "\nLvl 1000 - Boss Gold "
+                         "\nLvl 2000 - All Hero Damage "
+                         "\nLvl 3000 - All Gold "
+                         "\nLvl 4000 - All Damage")
+
+@bot.command()
+async def Nohni():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Nohni.jpg')
+    return await bot.say("Nohni the Spearit "
+                         "\nDamage Type: Melee "
+                         "\nInitial Cost: 1.0000E+140 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Melee Hero Damage "
+                         "\nLvl 40 - Melee Hero Damage "
+                         "\nLvl 60 - Melee Hero Damage "
+                         "\nLvl 100 - Melee Hero Damage "
+                         "\nLvl 200 - Melee Hero Damage "
+                         "\nLvl 500 - Titan Gold "
+                         "\nLvl 1000 - Boss Gold "
+                         "\nLvl 2000 - All Hero Damage "
+                         "\nLvl 3000 - All Gold "
+                         "\nLvl 4000 - All Damage")
+
+@bot.command()
+async def Damon():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Damon.jpg')
+    return await bot.say("Damon of the Darkness "
+                         "\nDamage Type: Spell "
+                         "\nInitial Cost: 1.0000E+140 "
+                         "\n~ Hero Skills ~ "
+                         "\nLvl 20 - Ranged Hero Damage "
+                         "\nLvl 40 - Ranged Hero Damage "
+                         "\nLvl 60 - Ranged Hero Damage "
+                         "\nLvl 100 - Ranged Hero Damage "
+                         "\nLvl 200 - Ranged Hero Damage "
+                         "\nLvl 500 - Titan Gold "
+                         "\nLvl 1000 - Boss Gold "
+                         "\nLvl 2000 - All Hero Damage "
+                         "\nLvl 3000 - All Gold "
+                         "\nLvl 4000 - All Damage")
+
+@bot.command()
+async def Hey():  # Basic shit
+    return await bot.say("Hello Sword Master Senpaiii~~")
+
+@bot.command()
+async def hey():  # Basic shit
+    return await bot.say("Hello Sword Master Senpaiii~~")
+
+@bot.command()
+async def Fluffershelp():
+    return await bot.say("What did you need help with Master? "
+                         "\n!herolist: for the list of heroes and their commands "
+                         "\n!petlist: for the list of pets and their commands")
+
+@bot.command()
+async def Who_is_best_girl():
+    await bot.upload(fp='C:/Users/Olivia/PycharmProjects/Fluffers/Rem.jpg')
+    return await bot.say("Rem!!!! (✿≧ω≦)ﾉ*:･ﾟ✧")
+
+@bot.command()
+async def herolist():
+    return await bot.say("(!Maya)             Maya Muerta the Watcher "  #1
+                         "\n(!Zato)               Zato the Blind Staff Master "  #2
+                         "\n(!Sophia)           Sophia, Champion of Swords "  #3
+                         "\n(!Lance)             Lance, Knight of Cobalt Steel "  #4
+                         "\n(!Pingo)             Pingo of the Tori "  #5
+                         "\n(!Rosabella)      Rosabella Bonnie Archer "  #6
+                         "\n(!Guldbrand)    Gulbrand the Destroyer "  #7
+                         "\n(!Davey)            Captain Davey Cannon "  #8
+                         "\n(!Rhys)               Rhys Mage of Order Evetga "  #9
+                         "\n(!Kronus)           Kronus, Bringer of Judgement "  #10
+                         "\n(!Cosette)          Cosette, Jewel of House Sabre "  #11
+                         "\n(!Kiki)                 Kiki the Dragon Rider "  #12
+                         "\n(!Maddie)          Maddie, Shadow Thief "  #13
+                         "\n(!Beany)             Beany Sprout the 1st "  #14
+                         "\n(!Sawyer)           Sawyer the Wild Gunslinger "  #15
+                         "\n(!Ursa)                Lil' Ursa " #16
+                         "\n(!Saje)                 Saje the Garden Keeper " #17
+                         "\n(!Wally)              Wally Wat the Magician " #18
+                         "\n(!Jayce)              Jayce the Ruthless Cutter " #19
+                         "\n(!Pharaoh)         The Great Pharaoh " #20
+                         "\n(!Boomoh)         Boomoh Doctor " #21
+                         "\n(!Dex)                 Dex-1000 " #22
+                         "\n(!Cass)               The Great Madame Cass " #23
+                         "\n(!Lala)                 Lala Quickshot " #24
+                         "\n(!Aya)                 Aya the Lightning Violet " #25
+                         "\n(!Lucy)                Lady Lucy the Night Caster " #26
+                         "\n(!Jazz)                 Jazz Rockerfellow " #27
+                         "\n(!Maple)             Maple the Autumn Guardian " #28
+                         "\n(!Kin)                   Kin the Puffy Beast " #29
+                         "\n(!Titania)            Princess Titania of Fay " #30
+                         "\n(!Miki)                Miki the Graceful Dancer " #31
+                         "\n(!Mina)               Mina the Priestess of Light " #32
+                         "\n(!Yzafa)               Yzafa the Fearsome Bandit " #33
+                         "\n(!Zolom)             Zolom Blaster, Space Hunter " #34
+                         "\n(!Finn)                 Finn the Funny Guard " #35
+                         "\n(!Nohni)              Nohni the Spearit " #36
+                         "\n(!Damon)           Damon of the Darkness") #37
+
+bot.run("Mjg0MDc5MDUzNjk3MTg3ODUy.C5N2VA.fN0KCKtkd2j038qkmVQJ65IB0wE")
